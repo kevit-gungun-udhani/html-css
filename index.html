@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All elements of form">
+    <title>Form</title>
+    <style>
+        li{
+            list-style-type: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style=" width: 500px;background-color:rgb(118, 118, 167); color: rgb(185, 185, 206); margin-bottom: 0px; ">HTML Form</h1>
+    </header>
+    <main>
+        <section style="background-color: rgb(156, 156, 179); width: 500px; height: 1030px; ">
+        <form action="/confirm.html" target="_blank">
+            <ul>
+                <li>
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname" maxlength="30" placeholder="Full Name" autocomplete="on">
+                </li>
+                <li>
+                    <label for="pin">Enter your pincode:</label>
+                    <input type="text" id="pincode" name="pincode" maxlength="6" size="6">
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </li>
+                <li>
+                    <label>Choose language:</label>
+                    <input type="radio" id="java" name="fav_language" value="java">
+                    <label for="java">Java</label>
+                    <input type="radio" id="c++" name="fav_language" value="c++">
+                    <label for="c++">C++</label>
+                    <input type="radio" id="python" name="fav_language" value="python">
+                    <label for="python">Python</label>
+                </li>
+                <li>
+                    <label for="gsearch">Search Google:</label>
+                    <input type="search" id="gsearch" name="gsearch">
+                </li>
+                <li>
+                    <label>Data Structure you know:</label>
+                    <input type="checkbox" id="array" name="data Structure" value="Array">
+                    <label for="array">Array</label>
+                    <input type="checkbox" id="stack" name="data Structure" value="Stack" checked>
+                    <label for="stack">Stack</label>
+                    <input type="checkbox" id="queue" name="data Structure" value="Queue">
+                    <label for="queue">Queue</label>
+                </li>
+                <li>
+                    <label for="fav_color">What's your fav colour</label>
+                    <input type="color" id="fav_color" name="fav_color">
+                </li>
+                <li>
+                    <label for="Birthday">Birthday</label>
+                    <input type="date" id="Birthday" name="Birthday" max="2030-12-31" min="2000-12-31"  >
+                </li>
+                <li>
+                    <label for="datetime-local">Today's Date & Time</label>
+                    <input type="datetime-local" id="datetime-local" name="datetime-local">
+                </li>
+                <li>
+                    <label for="email">Enter your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </li>
+                
+                <li>
+                    <label for="file-upload">Upload academic report:</label>
+                    <input type="file" id="file-upload" name="file-upload" multiple>
+                </li>
+                <li>
+                    <input type="hidden" id="studeentID" name="studeentID" value="2589">
+                </li>
+                <li>
+                    <label for="month-year">Month and Year:</label>
+                    <input type="month" id="month-year" mame="month-year">
+                </li>
+                <li>
+                    <label for="exp">Year Of Experience:</label>
+                    <input type="number" id="exp" name="Experience" min="2">
+                </li>
+                <li>
+                    <label for="Interest">Rate your Interest:</label>
+                    <input type="range" id="Interest" name="Interest" min="1" max="5">
+                </li>
+                <li>
+                    <label for="phone-no">Enter your phone number</label>
+                    <input type="tel" id="phone-no" name="Phone-no" pattern="[0-9]{10}">
+                </li>
+                <li>
+                    <label for="time">Select current time:</label>
+                    <input type="time" id="time" name="time">   
+                </li>
+                <li>
+                    <label for="github">GitHub Profile url:</label>
+                    <input type="url" name="github-url" id="github" autofocus>
+                </li>
+                <li>
+                    <label for="week">Select week</label>
+                    <input type="week" name="week" id="week">
+                </li>
+                <li>
+                    <label for="domain">Choose domain</label>
+                    <select id="domain" name="domain" size="3" multiple>
+                        <option value="Full-Stack" selected>Full Stack</option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Backend">Backend</option>
+                        <option value="AI/ML">AI/ML</option>
+                        <option value="DBA">DBA</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea rows="9" cols="15" name="description" placeholder="past Experience description"></textarea>
+                </li>
+                <li>
+                    <fieldset style="width: 250px;">
+                        <legend>From where you belong: </legend>
+                        <label for="Country">Country</label>
+                        <input id="Country" name="Country" type="text">
+                        <label for="State">State</label>
+                        <input id="State" name="State" type="text">
+                        <label for="City">City</label>
+                        <input id="City" name="City" type="text">
+                    </fieldset>
+                </li>  
+                <li>
+                    <label>Your Preffered Location</label>
+                    <input list="Locations">
+                    <datalist id="Locations">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Portugal">Portu</option>
+                    </datalist>
+                </li>
+                <li>
+                    <input type="reset" value="reset">
+                </li>
+                <li style="margin-left: 150px;">
+                    <input type="image" src="/img_submit.gif" alt="submit">
+                </li> 
+            </ul>
+        </form>
+        </section>
+    </main>
+</body>
+</html>
