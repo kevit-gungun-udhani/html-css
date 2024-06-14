@@ -1,0 +1,30 @@
+header{
+    height: 505px;
+    border: 1px solid black;
+    background-image: url(/header-bg-img.jpeg);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li{
+    list-style-type:none;
+}
+
+ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+nav div{
+    display: flex;
+    gap: 2rem;
+}
+
+.Subscribe{
+    width: 100px;
+}
