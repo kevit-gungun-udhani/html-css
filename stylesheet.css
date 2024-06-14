@@ -1,30 +1,46 @@
+body{
+    margin: 0px;
+}
+
 header{
-    height: 505px;
+    height: 550px;
     border: 1px solid black;
     background-image: url(/header-bg-img.jpeg);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header > div{
+    display: flex;
+    justify-content: center;
+    margin-block-start: 10px;
+}
+
+nav{
+    width: 1000px;
+}
+
+div[class="head-section"]{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 ul li{
     list-style-type:none;
+    font-weight: bold;
+    color: rgb(rgb(252, 252, 252), green, blue);
 }
 
 ul{
     display: flex;
-    gap: 1.5rem;
-}
-
-nav{
-    display: flex;
-    gap: 1rem;
-    justify-content: space-around;
-}
-
-nav div{
-    display: flex;
-    gap: 2rem;
+    gap: 2.4rem;
 }
 
 .Subscribe{
-    width: 100px;
+    width: 105px;
+    height: 44px;
+    border-radius: 32px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
 }
