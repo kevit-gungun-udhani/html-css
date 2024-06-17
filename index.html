@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A ghost website">
     <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ghost</title>
 </head>
 <body>
-    <header>
-        <div>
+    <div class="viewport">
+        <header class="header-grid">
             <nav>
                 <ul>
                     <li>Home</li>
@@ -19,14 +20,38 @@
                     <li>Portal</li>
                 </ul>
             </nav>
-            <div class="head-section">
-                <button>Search</button>
-                <button>Sign in</button>
+            <div class="user-action">
+                <i class="fa fa-search" style="font-size:25px; color: #ffff; align-self: center;"></i>
+                <button class="Sign-in">Sign In</button>
                 <button class="Subscribe">Subscribe</button>
             </div>
-        </div>
-    </header>
-    <main></main>
+            <div class="head-name">
+                <h1>Ghost</h2>
+                <p>The proffesional publishing platform</p>
+            </div>
+        </header>
+        <main>
+            <div class="content-grid">
+                <article class="post-1">
+                    <img src="/welcome-to-ghost.png" alt="Ghost">
+                </article>
+                <div class="post-1-content">
+                    <header>
+                        <span>Getting Started</span>
+                        <h2>
+                            Start here for a quick overview of everything you need to know
+                        </h2>
+                        <p></p>
+                    </header>
+                    <div class="post-1-text">We've crammed the most important information to help you get started with Ghost into this one post. It's your cheat-sheet to get started, and your shortcut to advanced features.</div>
+                    <footer>
+                        <time datetime="2021-03-18">Mar 18, 2021</time>
+                            <span>2 min read</span>
+                    </footer>
+                </div>
+            </div>
+        </main>
+    </div>
     <footer></footer>
 </body>
 </html>
